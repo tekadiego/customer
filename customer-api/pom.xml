@@ -12,12 +12,13 @@
     <artifactId>customer-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>learning</name>
-    <organization>
-        <name>diegoteka</name>
-    </organization>
+
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
+        <docker.username>diegoteka</docker.username>
+        <docker.image.name>customer-api</docker.image.name>
+        <docker.image.tag/>
     </properties>
     <dependencies>
         <dependency>
@@ -158,7 +159,7 @@
                         </platforms-->
                     </from>
                     <to>
-                        <image>docker.io/${project.organization.name}/${project.artifactId}:${project.version}</image>
+                        <image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
                         <tags>
                             <tag>latest</tag>
                         </tags>
