@@ -1,0 +1,40 @@
+# Ignore build and output directories for Monorepo
+**/target/
+**/out/
+**/.idea/
+**/.classpath
+**/.project
+**/.settings/
+**/*.iml
+
+# Ignore build and output directories for React frontend
+**/build/
+**/node_modules/
+**/.cache/
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+**/.env.test
+**/.eslintcache
+**/.npmrc
+**/.yarnrc
+**/yarn.lock
+
+# Ignore IDE specific files
+.idea/
+
+# Ignore logs and temporary files
+*.log
+*.log.*
+*.tmp
+*.swp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore dependencies for Monorepo (e.g., Maven, npm)
+**/.mvn/
+**/mvn-wrapper.properties
+**/package-lock.json
