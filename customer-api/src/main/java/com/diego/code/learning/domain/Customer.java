@@ -29,4 +29,8 @@ public class Customer {
     @Column(name = "age", nullable = false)
     private int age;
 
+    @Column(name = "gender", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
+
 }

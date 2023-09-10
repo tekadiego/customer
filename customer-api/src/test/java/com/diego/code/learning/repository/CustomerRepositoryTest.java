@@ -2,6 +2,7 @@ package com.diego.code.learning.repository;
 
 import com.diego.code.learning.AbstractTestContainer;
 import com.diego.code.learning.domain.Customer;
+import com.diego.code.learning.domain.Gender;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ class CustomerRepositoryTest extends AbstractTestContainer {
     @BeforeEach
     void setUp() {
         customerRepository.save(Customer.builder()
-                .name("teka").age(25).email("tekadiego23@gmail.com").build());
+                .name("teka").age(25).email("tekadiego23@gmail.com").gender(Gender.MALE).build());
     }
 
     @Test

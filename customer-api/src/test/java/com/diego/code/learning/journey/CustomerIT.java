@@ -2,6 +2,7 @@ package com.diego.code.learning.journey;
 
 import com.diego.code.learning.AbstractTestContainer;
 import com.diego.code.learning.domain.Customer;
+import com.diego.code.learning.domain.Gender;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,7 +34,7 @@ public class CustomerIT extends AbstractTestContainer {
 
         //create Customer
         Customer customer = Customer.builder()
-                .name("diego").email("tekadiego23@gmail.com").age(25).build();
+                .name("diego").email("tekadiego23@gmail.com").age(25).gender(Gender.MALE).build();
          webTestClient.post().uri(CUSTOMER_URI)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
