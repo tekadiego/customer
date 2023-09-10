@@ -1,0 +1,3 @@
+TRUNCATE TABLE customer;
+
+ALTER TABLE customer ADD COLUMN gender VARCHAR (10) NOT NULL default 'MALE';

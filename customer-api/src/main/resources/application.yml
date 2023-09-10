@@ -2,7 +2,9 @@ server:
   port: 8083
   error:
     include-message: always
-
+cors:
+  allowed-methods: "*"
+  allowed-origins: "*"
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/customer
